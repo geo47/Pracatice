@@ -6,6 +6,8 @@ Heap is a tree-based data structure, and they are a complete binary tree.
 
 The heap data structure is a complete binary tree that satisfies the heap property for the root and the children. This heap is also called a **binary heap**.
 
+A **complete binary tree** is a binary tree in which all the levels except the last level, i.e., leaf node should be completely filled, and all the nodes should be left-justified.
+
 There are generally two types of Heap:
 
 #### Max heap:
@@ -29,12 +31,11 @@ In Min heap, the root should always be minimum, and it is the same for all subtr
 ### Use Cases
 - When we need quick access to the highest or lowest element from **N** numbers of elements we can achieve it in the **O(1)** operation.
 - Heap is optimized for operations such as _Insert_, Find _Min/Max_, and _deletion_ operations compared to other data structures such as LinkedList and Array.
-
-![alt text](https://github.com/geo47/Pracatice/blob/master/src/figs/heap_complexity.png)
-
 - Let’s consider one example where we have List of Jobs in the queue where each job has been assigned priority number.
 - In this case we can always keep the max priority job at the root and find it in **O(1)** time, while we can remove it as soon as we finish the job and hepify our heap in **O(Log N)** time to get the next max priority Job.
 
+#### Time complexity in Max Heap
+![alt text](https://github.com/geo47/Pracatice/blob/master/src/figs/heap_complexity.png)
 
 ### Heap Implementation In Java
 - In Java one of the common ways to build a heap is to use a _PriorityQueue_ implementation.
@@ -131,3 +132,25 @@ System.out.println("pq max-> "+pq.peek());
 - Heap is important data structure to know about since it has good time complexity for insertion/finding/deletion operation compared to other data structures like array and LinkedList,
 - Java provides PriorityQueue implementation which we can use to keep the data in the Heap data structure.
 - We can pass comparator logic as a lambda function to the PriorityQueue to define the element's priority.
+
+
+### Frequently Asked Questions
+**Q #1) Is stack faster than Heap?**
+
+**Answer:** A stack is faster than a heap as access is linear in the stack compared to the heap.
+
+**Q #2) What is a Heap used for?**
+
+**Answer:** Heap is mostly used in algorithms that find the minimum or shortest path between two points like Dijkstra’s algorithm, to sort using heap sort, for priority queue implementations (min-heap), etc.
+
+**Q #3) What is a Heap? What are its types?**
+
+**Answer:** A heap is a hierarchical, tree-based data structure. A heap is a complete binary tree. Heaps are of two types i.e. Max heap in which the root node is the largest among all the nodes; Min heap in which the root node is the smallest or minimum among all the keys.
+
+**Q #4) What are the advantages of Heap over a stack?**
+
+**Answer:** The major advantage of the heap over stack is in the heap, the memory is dynamically allocated and hence there is no limit on how much memory can be used. Secondly, only local variables can be allocated on the stack while we can also allocate global variables on the heap.
+
+**Q #5) Can Heap have duplicates?**
+
+**Answer:** Yes, there are no restrictions on having nodes with duplicate keys in the heap as the heap is a complete binary tree and it does not satisfy the properties of the binary search tree.

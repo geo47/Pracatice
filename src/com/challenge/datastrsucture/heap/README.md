@@ -11,12 +11,12 @@ There are generally two types of Heap:
 #### Max heap:
 In Max heap, the root should always be maximum compared to the left and right child, and this is true for all subtrees as well.
 
-![alt text](E:\Development\Java\algorithms\Pracatice\src\figs\max_heap.png)
+![alt text](https://github.com/geo47/Pracatice/tree/master/src/figs/max_heap.png)
 
 #### Min heap:
 In Min heap, the root should always be minimum, and it is the same for all subtrees as well.
 
-![alt text](E:\Development\Java\algorithms\Pracatice\src\figs\min_heap.png)
+![alt text](https://github.com/geo47/Pracatice/tree/master/src/figs/min_heap.png)
 
 - So in general for any ith node in the binary heap array representation, A[i], we can represent the indices of other nodes as shown below.
 
@@ -30,7 +30,7 @@ In Min heap, the root should always be minimum, and it is the same for all subtr
 - When we need quick access to the highest or lowest element from **N** numbers of elements we can achieve it in the **O(1)** operation.
 - Heap is optimized for operations such as _Insert_, Find _Min/Max_, and _deletion_ operations compared to other data structures such as LinkedList and Array.
 
-![alt text](E:\Development\Java\algorithms\Pracatice\src\figs\heap_complexity.png)
+![alt text](https://github.com/geo47/Pracatice/tree/master/src/figs/heap_complexity.png)
 
 - Let’s consider one example where we have List of Jobs in the queue where each job has been assigned priority number.
 - In this case we can always keep the max priority job at the root and find it in **O(1)** time, while we can remove it as soon as we finish the job and hepify our heap in **O(Log N)** time to get the next max priority Job.
